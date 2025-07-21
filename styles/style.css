@@ -676,6 +676,9 @@ button {
         z-index: 1;
         width: 100%;
     }
+    .img_wrapper_size-l img {
+        width: 100%;
+    }
 }
 
 @media (max-width:600px) {
