@@ -476,6 +476,7 @@ button {
     height: 100%;
     right: 0;
     bottom: 0;
+    object-position: bottom;
 }
 .products-company__item--spec {
     background: url('../img/bg_spec_card.png') 100% / cover no-repeat;
