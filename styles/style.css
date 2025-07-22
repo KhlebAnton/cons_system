@@ -278,8 +278,29 @@ button {
 
 .products-company__container {
     margin-top: 30px;
+    max-height: 550px;
+    overflow-y: auto;
 
 }
+  /* Стилизация скроллбара для WebKit браузеров (Chrome, Safari, Edge) */
+  .products-company__container::-webkit-scrollbar {
+    width: 8px; /* ширина вертикального скроллбара */
+    height: 8px; /* высота горизонтального скроллбара */
+  }
+  
+  .products-company__container::-webkit-scrollbar-track {
+    background: #1d1d1d1f; /* цвет трека */
+    border-radius: 4px;
+  }
+  
+  .products-company__container::-webkit-scrollbar-thumb {
+    background: #025ADB; /* основной цвет скроллбара */
+    border-radius: 4px;
+  }
+  
+  .products-company__container::-webkit-scrollbar-thumb:hover {
+    background: #0248b0; /* цвет при наведении */
+  }
 
 .products-company__content__hidden {
     display: grid;
@@ -519,6 +540,9 @@ button {
         opacity: 1;
         margin-bottom: 10px;
     }
+    .products-company__container {
+        max-height: none;
+    }
 }
 
 @media (max-width:860px) {
@@ -679,6 +703,7 @@ button {
     }
     .img_wrapper_size-l img {
         width: 100%;
+        object-position: top;
     }
 }
 
